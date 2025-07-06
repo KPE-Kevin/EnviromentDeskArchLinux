@@ -18,22 +18,26 @@ echo ' '
 #makepkg -si
 #yay -S visual-studio-code-bin
 #sudo pacman -S waybar
-
+#sudo pacman -S jdk21-openjdk maven
+###yay -S flutter
+#sudo pacman -S netbeans nodejs
 #Respaldo de archivos orignales
+#mkdir respaldo
 
-#mkdir ~/Documents
-#mkdir ~/Proyects
-#mkdir ~/Images
+#cp ~/.config/hypr/hyprland.conf ./respaldo
+#cp -r /etc/xdg/waybar/. ./respaldo
+
+#Crear Carpetas
+#mkdir ~/Documents                                                                                                                                                                                                 
+#mkdir ~/Proyects                                                                                                                                                                                                  
+#mkdir ~/Images                                                                                                                                                                                                    
+#mkdir ~/
 
 #~
-#cp ~/.config/hypr/hyprland.conf ./respaldo
- 
 
-#mkdir respaldo
-#cp ~/.config/hypr/hyprland.conf ./respaldo
 
 #Copiado de configuraiones del entorno de escritorio
 
-cp ./config/hyprland.conf ~/.config/hypr/hyprland.conf
-
-
+#cp ./config/hyprland.conf ~/.config/hypr/hyprland.conf
+sudo cp ./config/config.jsonc /etc/xdg/waybar/config.jsonc
+#cp ./config/hyprland.conf ~/.config/hypr/hyprland.conf
