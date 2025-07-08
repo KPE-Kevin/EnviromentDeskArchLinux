@@ -19,9 +19,20 @@ echo ' '
 #yay -S visual-studio-code-bin
 #sudo pacman -S waybar
 #sudo pacman -S jdk21-openjdk maven
-###yay -S flutter
 #sudo pacman -S netbeans nodejs
+
+
 #Respaldo de archivos orignales
+echo "Configuraciones de paquetes"
+echo " "
+#Configuracion para Network Manager
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
+rfkill list
+sudo rfkill unblock all
+sudo 
+
+
 #mkdir respaldo
 
 #cp ~/.config/hypr/hyprland.conf ./respaldo
@@ -38,6 +49,6 @@ echo ' '
 
 #Copiado de configuraiones del entorno de escritorio
 
-#cp ./config/hyprland.conf ~/.config/hypr/hyprland.conf
-sudo cp ./config/config.jsonc /etc/xdg/waybar/config.jsonc
+#cp ./config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
+sudo cp ./config/waybar/config.jsonc /etc/xdg/waybar/config.jsonc
 #cp ./config/hyprland.conf ~/.config/hypr/hyprland.conf
