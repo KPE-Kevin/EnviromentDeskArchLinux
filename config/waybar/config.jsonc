@@ -5,7 +5,6 @@
     "height": 50, // Waybar height (to be removed for auto height)
     "width": 1850, // Waybar width
     "spacing": 7, // Gaps between modules (4px)
-    //"opacity":0.4,
     // Choose the order of the modules
     "modules-left": [
         //"hyprland/mode"
@@ -17,19 +16,19 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "mpd",
-        "idle_inhibitor",
-        "pulseaudio",
-        "network",
-        "power-profiles-daemon",
-        "cpu",
+        // "mpd",
+        // "idle_inhibitor",
+        "pulseaudio", // Funciona
+        "network", //Funciona
+        // "power-profiles-daemon",
+        "cpu", //Funciona
         "memory",
-        "temperature",
-        "backlight",
-        "keyboard-state",
+        // "temperature",
+        // "backlight",
+        // "keyboard-state",
         "hyprland/language",
         "battery",
-        "battery#bat2",
+        // "battery#bat2",
         "clock",
         "tray",
         "custom/power"
@@ -127,7 +126,7 @@
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
+        "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
