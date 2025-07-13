@@ -20,17 +20,18 @@ echo ' '
 #sudo pacman -S waybar
 #sudo pacman -S jdk21-openjdk maven
 #sudo pacman -S netbeans nodejs
+#sudo pacman -S ttf-nerd-fonts-symbols
 
 
 #Respaldo de archivos orignales
 echo "Configuraciones de paquetes"
 echo " "
 #Configuracion para Network Manager
-sudo systemctl enable NetworkManager
-sudo systemctl start NetworkManager
-rfkill list
-sudo rfkill unblock all
-sudo 
+#sudo systemctl enable NetworkManager
+#sudo systemctl start NetworkManager
+#rfkill list
+#sudo rfkill unblock all
+
 
 
 #mkdir respaldo
