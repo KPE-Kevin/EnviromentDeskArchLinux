@@ -34,7 +34,7 @@
 #sudo pacman -S netbeans nodejs
 #sudo pacman -S ttf-nerd-fonts-symbols
 #yay -S hyprlock-git
-
+#sudo pacman -S docker
 
 
 #Respaldo de archivos orignales
@@ -45,6 +45,10 @@
 #sudo systemctl start NetworkManager
 #rfkill list
 #sudo rfkill unblock all
+#sudo systemctl start docker.service
+#sudo systemctl enable docker.service
+#sudo usermod -aG docker $(whoami)
+#newgrp docker
 
 # Respaldos de archivos de configuración de los aplicativos
 #cp ~/.config/hypr/hyprland.conf ./respaldo/hypr
@@ -57,7 +61,8 @@
 #Copiado de configuraiones del entorno de escritorio
 
 cp ./config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
-#sudo cp ./config/waybar/config.jsonc /etc/xdg/waybar/config.jsonc
-#sudo cp ./config/waybar/style.css /etc/xdg/waybar/style.css
+sudo cp ./config/waybar/config.jsonc /etc/xdg/waybar/config.jsonc
+sudo cp ./config/waybar/style.css /etc/xdg/waybar/style.css
+#sudo cp ./config/waybar/power_menu.xml /etc/xdg/waybar/power_menu.xml
 #cp ./config/hyprlock/hyprlock.conf ~/.config/hypr/hyprlock.conf
 #sudo cp ./config/sddm/default.conf /usr/lib/sddm/sddm.conf.d/default.conf 
