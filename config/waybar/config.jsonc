@@ -4,7 +4,7 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 40, // Waybar height (to be removed for auto height)
     "width": 1850, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 8, // Gaps between modules (4px)
     "margin-top":10,
     "margin-bottom":10,
     // Choose the order of the modules
@@ -12,8 +12,17 @@
         "custom/arch",
         "hyprland/workspaces"
     ],
+    "modules-center":[
+        "clock"
+    ],
     "modules-right":[
         // "tray",
+        "cpu",
+        "memory",
+        "temperature",
+        "network",
+        "battery",
+        
         "custom/power"
     ],
     // Modules configuration
@@ -23,13 +32,56 @@
         "warp-on-scroll": false,
         "format": "{icon}",
         "format-icons": {
-        "1": "x",
-        "2": "x",
-        "3": "x",
-        "urgent": "",
-        "focused": "",
-        "default": ""
+            "focused": "⬤",
+            "default": "○",
+            "urgent": "⚠"  
         }
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        // "format-icons": ["", "", "", "", ""]
+        // "format-icons": ["󰁹","󰂂","󰂁","󰂀","󰁿","󰁾","󰁽","󰁼","󰁻","󰁺","󰂃"]
+        "format-icons": ["󰂃","󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"]
+    },
+     "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
     },
     "tray": {
         // "icon-size": 21,
@@ -46,7 +98,7 @@
     "custom/arch": {
         "format": "<span size='x-large'></span>",
         "interval": 0,
-        "on-click":"wofi --show run",
+        "on-click":"wofi --show drun",
         "escape": false
     }
 }
