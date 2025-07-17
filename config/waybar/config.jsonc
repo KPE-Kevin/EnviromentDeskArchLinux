@@ -4,7 +4,7 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 40, // Waybar height (to be removed for auto height)
     "width": 1850, // Waybar width
-    "spacing": 8, // Gaps between modules (4px)
+    "spacing": 10, // Gaps between modules (4px)
     "margin-top":10,
     "margin-bottom":10,
     // Choose the order of the modules
@@ -22,7 +22,6 @@
         "temperature",
         "network",
         "battery",
-        
         "custom/power"
     ],
     // Modules configuration
@@ -32,8 +31,18 @@
         "warp-on-scroll": false,
         "format": "{icon}",
         "format-icons": {
+            "1":"",
+            "2":"",
+            "3":"",
+            "4":"",
+            "5":"",
+            "6":"",
+            "7":"",
+            "8":"",
+            "9":"",
+            "10":"",
             "focused": "⬤",
-            "default": "○",
+            "default": "",
             "urgent": "⚠"  
         }
     },
