@@ -43,18 +43,13 @@ window#waybar {
     background-color: #eb4d4b;
 }
 
-#custom-power button{
+#custom-power{
     font-size: 14px;
     color: rgb(230,230,230);
     background-color: rgba(25,25,25,0.9);
     border-radius: 10px;
     min-width: 35px;
 }
-
-#custom-power button:active{
-    color: rgba(2, 194, 194, 0.9);
-}
-
 
 #custom-arch{
     font-size: 16px;
