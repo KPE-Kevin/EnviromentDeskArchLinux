@@ -51,7 +51,10 @@
 # git clone https://github.com/lr-tech/rofi-themes-collection.git
 # sudo cp -r rofi-themes-collection/themes/. /usr/share/rofi/themes
 # cd ..
+# sudo pacman -S mysql
 
+# sudo pacman -S mysql-workbench
+# sudo pacman -S virtualbox
 
 
 #Respaldo de archivos orignales
@@ -72,10 +75,10 @@
 
 #Copiado de configuraiones del entorno de escritorio
 
-cp ./config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
-# sudo cp -r ./config/sddm/themes/future /usr/share/sddm/themes/
-sudo cp ./config/waybar/config.jsonc /etc/xdg/waybar/config.jsonc
-sudo cp ./config/waybar/style.css /etc/xdg/waybar/style.css
+# cp ./config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
+# # sudo cp -r ./config/sddm/themes/future /usr/share/sddm/themes/
+# sudo cp ./config/waybar/config.jsonc /etc/xdg/waybar/config.jsonc
+# sudo cp ./config/waybar/style.css /etc/xdg/waybar/style.css
 #sudo cp ./config/waybar/power_menu.xml /etc/xdg/waybar/power_menu.xml
 #cp ./config/hyprlock/hyprlock.conf ~/.config/hypr/hyprlock.conf
 # sudo cp ./config/sddm/default.conf /usr/lib/sddm/sddm.conf.d/default.conf 
@@ -97,3 +100,8 @@ sudo cp ./config/waybar/style.css /etc/xdg/waybar/style.css
 #sudo pacman -S alsa-utils
 # source ~/.bashrc
 # rofi-theme-selector
+# sudo mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+#sudo systemctl enable --now mariadb
+# sudo mysql_secure_installation
+
+
