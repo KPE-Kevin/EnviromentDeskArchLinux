@@ -108,8 +108,9 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "custom/power": {
-        "format": "<span size='x-large'></span>",
+        "format": "⏻",
         "escape": false
+        
     },
     "custom/arch": {
         "format": "<span size='x-large'></span>",

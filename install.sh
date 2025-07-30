@@ -55,6 +55,9 @@
 
 # sudo pacman -S mysql-workbench
 # sudo pacman -S virtualbox
+# yay -S sddm-astronaut-theme
+
+
 
 
 #Respaldo de archivos orignales
@@ -77,8 +80,8 @@
 
 # cp ./config/hypr/hyprland.conf ~/.config/hypr/hyprland.conf
 # # sudo cp -r ./config/sddm/themes/future /usr/share/sddm/themes/
-# sudo cp ./config/waybar/config.jsonc /etc/xdg/waybar/config.jsonc
-# sudo cp ./config/waybar/style.css /etc/xdg/waybar/style.css
+sudo cp ./config/waybar/config.jsonc /etc/xdg/waybar/config.jsonc
+sudo cp ./config/waybar/style.css /etc/xdg/waybar/style.css
 #sudo cp ./config/waybar/power_menu.xml /etc/xdg/waybar/power_menu.xml
 #cp ./config/hyprlock/hyprlock.conf ~/.config/hypr/hyprlock.conf
 # sudo cp ./config/sddm/default.conf /usr/lib/sddm/sddm.conf.d/default.conf 
